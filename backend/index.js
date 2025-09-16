@@ -9,7 +9,7 @@ app.use(cors());
 
 mongoose.connect("mongodb://127.0.0.1:27017/farmers");
 
-app.post("/",(req,res)=>{
+app.post("/register",(req,res)=>{
     EmployeeModel.create(req.body)
     .then(employees=>res.json(employees))
     .catch(err=>res.json(err))

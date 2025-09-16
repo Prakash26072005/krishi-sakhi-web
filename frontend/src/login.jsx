@@ -26,7 +26,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.data);
         if (result.data === "Success") {
-          navigate("/dashboard");
+          navigate("/");
         } else {
           setError(result.data || "Invalid email or password");
         }
@@ -157,7 +157,7 @@ const Login = () => {
           </form>
 
           <p>
-            Don’t have an account? <Link to="/signup">Signup</Link>
+            Don’t have an account? <Link to="/register">Signup</Link>
           </p>
         </div>
       </div>
