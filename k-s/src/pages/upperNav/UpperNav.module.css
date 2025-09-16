@@ -1,0 +1,23 @@
+.upperNav {
+  display: flex;
+  align-items: center;
+  margin-left: 300px; /* Same as sidebar width */
+ 
+  border-bottom: 1px solid #e9ecef;
+  padding: 16px 20px;
+  background-color: #f0fff0;
+  transition: margin-left 0.3s ease;
+}
+
+.upperNav h1 {
+  color: #2c5f2d;
+  font-size: 24px;
+}
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+  .upperNav {
+    margin-left: 0;
+    padding-left: 60px; /* Make space for hamburger menu */
+  }
+}
