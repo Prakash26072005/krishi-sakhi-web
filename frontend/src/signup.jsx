@@ -25,7 +25,7 @@ const Signup = () => {
     }
 
     axios
-      .post("http://localhost:3001/register", {
+      .post("http://localhost:3001/", {
         name: formData.name,
         email: formData.email,
         password: formData.password,
